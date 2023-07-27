@@ -1,0 +1,130 @@
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80rem;
+  margin: 2rem auto;
+  padding: 4rem;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+  width: 20rem;
+  margin-right: 2rem;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 0.2rem solid #e0e0e0;
+}
+
+.right-column {
+  flex: 1;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.skills-list,
+.additional-skills-list {
+  padding-left: 1.5rem;
+}
+
+.skills-item,
+.additional-skills-item {
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.buttons button {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.download-button {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.download-button button {
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.download-button button:hover {
+  background-color: #0056b3;
+}
+
+#visitors {
+  margin-top: 2rem;  /* Isso adiciona espaço entre o botão de download e o contador */
+  font-size: 1rem;
+  color: #333;
+  text-align: center;  /* Isso centraliza o contador */
+}
+
+/* Responsividade para telas menores que 600px */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-column {
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+
+  .profile-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
